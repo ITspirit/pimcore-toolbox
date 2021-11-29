@@ -1,0 +1,16 @@
+<div class="accordion" id="{{ id }}" role="tablist">
+    {% for i in pimcore_iterate_block(panel) %}
+        <div class="accordion-item {{ type }}">
+            <h2 class="accordion-header" id="{{ id }}-{{ panel.currentIndex }}">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}-{{ panel.currentIndex }}" aria-expanded="false" aria-controls="collapse-{{ id }}-{{ panel.currentIndex }}">
+                    {% include toolbox_area_path(areaId, areaTemplateDirectory, 'partial/accordion/title') %}
+                </button>
+            </h2>
+            <div id="collapse-{{ id }}-{{ panel.currentIndex }}" aria-labelledby="{{ id }}-{{ panel.currentIndex }}" class="accordion-collapse collapse {{ editmode ? 'show' : '' }}" data-bs-parent="#{{ id }}">
+                <div class="accordion-body">
+                    {% include '@Toolbox/helper/areablock.html.twig' with {'name': 'accord', 'type' : 'accordion'} %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

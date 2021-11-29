@@ -1,5 +1,8 @@
 # Upgrade Notes
 
+## Version 4.0.3
+- [FEATURE] added Bootstrap5 Theme
+ 
 ## Version 4.0.2
 - [FEATURE] PIMCORE 10.2 Support
 

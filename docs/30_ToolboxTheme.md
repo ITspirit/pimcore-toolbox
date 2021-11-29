@@ -2,6 +2,7 @@
 The Toolbox Bundle is currently using Bootstrap 4 as default framework. 
 
 ## Supported Frameworks
+- [Bootstrap 5](./themes/Bootstrap5.md)
 - [Bootstrap 4](./themes/Bootstrap4.md)
 - [Bootstrap 3](./themes/Bootstrap3.md)
 - [UIkit3](./themes/UiKit3.md)
